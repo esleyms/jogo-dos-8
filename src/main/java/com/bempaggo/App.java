@@ -3,14 +3,23 @@ package com.bempaggo;
 import com.bempaggo.models.Tabuleiro;
 import com.bempaggo.service.impl.JogoService;
 
+
+
 import java.util.List;
 import java.util.Scanner;
 
 /**
  * Processo Seletivo da BemPaggo
  *
+ * O Jogo dos Oito é um jogo de tabuleiro.
+ * O jogo é estruturado em um tabuleiro 3×3 com 8 peças (cada peça tem um número de 1 a 8) e um espaço vazio.
+ * O objetivo é colocar os números nas peças para combinar com a configuração final usando o espaço vazio.
+ * Podemos deslizar quatro peças adjacentes (esquerda, direita, acima e abaixo) no espaço vazio.
  */
-public class App 
+
+
+
+public class App
 {
     public static void main( String[] args )
     {
@@ -40,10 +49,3 @@ public class App
         }while (continuarJogo);
     }
 }
-/**
- * CRIAR A PLACA
- * INCLUIR 8 BLOCOS
- *
- * Estado inicial = [1, 2, 3, 4, 8, 6, 7, 5]
- * Estado final = [1, 2, 3, 4, 5, 6, 7, 8]
- */

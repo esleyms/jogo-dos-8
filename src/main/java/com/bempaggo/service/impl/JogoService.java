@@ -32,10 +32,12 @@ public class JogoService implements IJogoService {
     @Override
     public List<Integer> encontrarPecasAdjacentes(Peca[][] pecas) {
         List<Integer> pecasAdjacentes = new ArrayList<Integer>();
-        for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++) {
-                if(pecas[i][j] != null && pecas[i][j].isAdjacente()){
-                    pecasAdjacentes.add(pecas[i][j].getNumeroPeca());
+        if(pecas != null){
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if(pecas[i][j] != null && pecas[i][j].isAdjacente()){
+                        pecasAdjacentes.add(pecas[i][j].getNumeroPeca());
+                    }
                 }
             }
         }
